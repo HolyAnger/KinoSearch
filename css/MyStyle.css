@@ -1,0 +1,316 @@
+header {
+	background: url(../images/header.jpg) no-repeat;
+	background-size: cover;
+	min-height:880px;
+	width:100%;
+	position:relative;
+	
+}
+body{
+	overflow-x:hidden;
+}
+footer {
+	background-color:#E3E2D0;
+	width:100%;
+	height:auto;
+	font-size:22px;
+}
+#footer {
+	margin-top:30px;
+	float:left;
+}
+
+  h1{
+	  margin:0 auto;
+	font-size:150px;
+	color:#E4DCFF;
+	display:block;
+	max-width:760px;
+
+}
+
+#log {
+	float:right;
+	margin-top:16px;
+	cursor:pointer;
+}
+
+@keyframes slider {
+  0% {
+    transform: scale(0.2) rotate(0deg);
+  }
+
+  50% {
+  
+      transform: scale(1.5) rotate(180deg);
+ 
+  }
+    100% {
+    
+   transform: scale(1) rotate(360deg);
+ 
+  }
+
+}
+
+.slider img {
+	width:100%;
+	max-height:630px;
+}
+.slider{
+		margin-top:10px;
+		width:100%;
+		max-height:630px;
+		overflow: hidden;
+		z-index: 999;
+		animation: slider 1s linear 0s 1;
+
+	
+}
+nav {
+		background-color: #002e48;
+		width:100%;
+		overflow: hidden;
+}
+
+.menu {
+	min-height:50px;
+	font-family:Florence, cursive;
+	font-size:20px;
+	
+	margin-left: 16%;
+}
+.menu ul {
+	padding:0;
+	list-style-type:none;
+	
+}
+.menu li {
+	float:left;
+	padding:0 26px;
+	display:inline-block;
+	transition: background 0.3s;
+
+	
+	
+}
+.admin a {
+	text-decoration: none;
+	color:white;
+	position: absolute;
+	right:0;
+	top:11px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+.panel{
+	min-height:60px;
+	background-color: #002e48;
+	margin:0;
+}
+.search, .sort{
+	margin-top: 10px;
+}
+.sort{
+	text-align: right;
+}
+.search input, .sort input{
+	width:32%;
+	display: inline-block;
+}
+#add_form{
+	background-color: #E3E2D0;
+}
+
+.menu a{
+	color:#fff;
+	line-height: 50px;
+}
+.container {
+	position: relative;
+}
+
+.menu li:hover {
+	background: rgba(255,255,255,0.3);
+}
+#content{
+	background: url(../images/content-bg.jpg) no-repeat;
+	background-size: cover;
+	z-index: 999;
+}
+
+@font-face {
+	src:url(fonts/Righteous-Regular.ttf);
+}
+
+
+.film {
+	margin-top: 20px;
+	border-bottom: 1px solid gray;
+	position:relative;
+}
+.film:after{
+	content:'';
+	height:0;
+	display:block;
+	visibility: hidden;
+	clear:both;
+}
+
+.film img{
+	height:280px;
+	min-width:200px; 
+	max-width:200px; 
+	float:left;
+}
+.raiting {
+	min-width:40px;
+	height:40px;
+	background: url(../images/star.png) no-repeat;
+	background-size: cover;
+	position:absolute;
+	left:233px;
+	top:-5px;
+	text-align: center;
+}
+.mark{
+	background: none;
+	color:white;
+	position: relative;
+	left:8px;
+	top:11px;
+	padding-right: 13px
+
+}
+.film-info{
+	float:left;
+	color:white;
+	max-width: 940px;
+	height:auto;
+}
+.name_film {
+	position: absolute;
+	right:0;
+	top:0;
+
+}
+
+.name_film h4 {
+	margin:0;
+}
+
+.description{
+	max-width: 900px;
+	margin:40px;
+	margin-right: 0;
+	min-height: 180px;
+}
+.actors{
+	position: relative;
+	bottom: 0;
+	left:240px;
+	max-width: 650px;
+}
+.stars{
+	text-align: center; 
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.stars img{
+		width:200px; 
+		height:280px;
+		border-radius:10px;
+}
+.stars figcaption{
+	color:white;
+}
+.budget{
+	position:absolute;
+	right:0;
+	top:15.5px;
+}
+.date{
+	position: absolute;
+	right:0;
+	bottom: 0;
+}
+#about {
+	color:white;
+	background: -webkit-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: -o-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: -ms-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	font-size:28px;
+}
+#list {
+	font: bold italic 40px serif;
+	height:145px;
+}
+.musicant-list  {
+	float:right;
+	list-style-type: none;
+	margin:0;
+	margin-right:100px;
+}
+
+
+@media (max-width: 600px and min-width: 461){
+	header{
+		height:700px;
+	}
+	h1{
+		font-size: 42px;
+	}
+
+nav {
+	height:auto;
+	position:relative;
+	text-align: left;
+}
+
+	.menu {
+	min-height:60px;
+	font-family:Florence, cursive;
+	font-size:25px;
+	}
+	
+	.menu li {
+		width:100%;
+	}
+	
+}
+@media (max-width: 992px){
+	.sort{
+		text-align:left;
+	}
+	header{
+		min-height:700px;
+	}
+	h1{
+		font-size:100px;
+	}
+	
+}
+
+@media (max-width: 460px ){
+	
+	h1{
+		font-size:50px;
+	}
+	header{
+		min-height:600px;
+	}
+	.menu{
+		font-size:19px;
+	}
+	
+	.description{
+		margin-left:0;
+	}
+	.name_film, .budget, .actors, .date{
+		position:static;
+	}
+	
+	
+}
+
